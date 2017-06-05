@@ -1,0 +1,21 @@
+{
+  "name": "sociomile-web-new",
+  "version": "1.0.0",
+  "description": "sociomile website",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "gulp-clean-css": "^3.4.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
