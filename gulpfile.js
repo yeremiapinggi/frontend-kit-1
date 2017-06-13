@@ -6,7 +6,7 @@ var browserSync = require('browser-sync').create();
 
 gulp.task('scripts', function(){
     return gulp.src('assets/js/*.js')
-	.pipe(concat('all.min.js'))
+	.pipe(concat('bundle.min.js'))
     .pipe(uglify().on('error', function(e){
             console.log(e);
          }))
@@ -15,7 +15,7 @@ gulp.task('scripts', function(){
 
 gulp.task('css', function(){
 	return gulp.src(['./assets/css/*'])
-	.pipe(concat('all.min.css'))
+	.pipe(concat('bundle.min.css'))
 	.pipe(cleanCSS({compatibility: 'ie8'}))
 	.pipe(gulp.dest('dist/css'))
 });
